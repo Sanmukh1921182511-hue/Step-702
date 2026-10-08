@@ -1,0 +1,24 @@
+Question 1
+Compare the time complexity for searching for a specific element in a 1D array when the array is
+unsorted versus when it is sorted. Explain the fundamental reason for this difference in search
+efficiency.
+Question 2
+When determining the Big-O complexity of an algorithm, constant multipliers are dropped. Explain
+why an algorithm performing '2n' operations is still classified as O(n), rather than O(2n), in Big-O
+notation.
+Question 3
+Describe how the traversal strategy fundamentally differs between linear data structures (like arrays)
+and non-linear data structures (like trees), based on how elements are related.
+
+answers:
+Question 1
+
+In an unsorted array, searching takes O(n) because each element may need to be checked one by one. In a sorted array, binary search takes O(log n) because it repeatedly divides the search range in half. The difference is that a sorted array allows us to eliminate half of the remaining elements at each step.
+
+Question 2
+
+Big-O notation ignores constant multipliers because they do not change the rate at which the number of operations grows as the input size increases. Therefore, O(2n) = O(n), since both grow linearly with the input size.
+
+Question 3
+
+In linear data structures, elements are arranged sequentially, so traversal usually proceeds from one element to the next. In non-linear data structures, elements are connected hierarchically or through multiple relationships. For example, tree traversal can follow preorder, inorder, postorder, or level-order strategies.
